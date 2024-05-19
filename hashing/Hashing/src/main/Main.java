@@ -30,6 +30,11 @@ public class Main {
 	lp.insert("quick");
 	lp.insert("fox");
 	lp.displayHashTable();
+	lp.searchHashTable("fox");
+	
+	lp.deleteKeyHashTable("hd");
+	lp.deleteKeyHashTable("fox");
+	lp.searchHashTable("fox");
 	
 	}
 	
