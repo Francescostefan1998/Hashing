@@ -2,6 +2,7 @@ package main;
 
 import hashing.DirectChaining;
 import hashing.LinearProbing;
+import hashing.QuadraticProbing;
 
 public class Main {
 	
@@ -21,7 +22,7 @@ public class Main {
 //		dc.searchHashTable("fox");
 		
 		
-	LinearProbing lp = new LinearProbing(13);
+	QuadraticProbing lp = new QuadraticProbing(13);
 	lp.insert("The");
 	lp.insert("Quick");
 	lp.insert("Brown");
@@ -30,11 +31,11 @@ public class Main {
 	lp.insert("quick");
 	lp.insert("fox");
 	lp.displayHashTable();
-	lp.searchHashTable("fox");
+	//lp.searchHashTable("fox");
 	
-	lp.deleteKeyHashTable("hd");
-	lp.deleteKeyHashTable("fox");
-	lp.searchHashTable("fox");
+	// lp.deleteKeyHashTable("hd");
+	// lp.deleteKeyHashTable("fox");
+	// lp.searchHashTable("fox");
 	
 	}
 	
